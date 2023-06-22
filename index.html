@@ -2,18 +2,16 @@
 
 <head>
 	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+	<script src="./script.js"></script>
 </head>
 
 <body>
-
 	<form id="searchForm">
-    <!-- TODO: add form elements -->
+		<input type="search" placeholder="Search..." name="q"/>
+		<input type="radio" name="searchEngine" value="ecosia" id="ecosia" checked="checked"/><label for="ecosia">Ecosia</label>
+		<input type="radio" name="searchEngine" value="duckDuckGo" id="duckDuckGo"/><label for="duckduckGo">DuckDuckGo</label>
+		<input type="radio" name="searchEngine" value="bing" id="bing"/><label for="bing">Bing</label>
+		<input type="radio" name="searchEngine" value="google" id="google"/><label for="google">Google</label>
+		<button value="Go!">Go!</button>
 	</form>
-
 </body>
